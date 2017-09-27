@@ -7,4 +7,12 @@ public class StackExample<T> {
     }
 
 
+    public void push(T item) {
+
+    }
+
+    public T pop() {
+        return null;
+    }
+
 }
