@@ -1,16 +1,16 @@
 import java.util.Arrays;
 
-public class StackExample<T> {
+public class ArrayStack<T> implements StackInterface<T> {
 
     private T[] data;
     private int stackPointer;
 
-    public StackExample() {
+    public ArrayStack() {
         this.data = (T[]) new Object[1000];
         this.stackPointer = 0;
     }
 
-    public StackExample(int stackSize) {
+    public ArrayStack(int stackSize) {
         this.data = (T[]) new Object[stackSize];
         this.stackPointer = 0;
     }
@@ -46,7 +46,7 @@ public class StackExample<T> {
 
     @Override
     public String toString() {
-        return "StackExample{" +
+        return "ArrayStack{" +
                 "data=" + Arrays.toString(data) +
                 ", stackPointer=" + stackPointer +
                 '}';
